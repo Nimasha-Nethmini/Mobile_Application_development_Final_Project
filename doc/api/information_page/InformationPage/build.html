@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the build method from the InformationPage class, for the Dart programming language.">
+  <title>build method - InformationPage class - information_page library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">final_project</a></li>
+    <li><a href="../../information_page/information_page-library.html">information_page</a></li>
+    <li><a href="../../information_page/InformationPage-class.html">InformationPage</a></li>
+    <li class="self-crumb">build method</li>
+  </ol>
+  <div class="self-name">build</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="information_page&#47;InformationPage-class-sidebar.html"
+      data-below-sidebar="">
+      <div>
+<h1><span class="kind-method">build</span> method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+  <div>
+    <ol class="annotation-list">
+        <li>@<a href="https://api.flutter.dev/flutter/dart-core/override-constant.html">override</a></li>
+    </ol>
+  </div>
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span>
+<span class="name ">build</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="build-param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span></li>
+</ol>)
+
+      <div class="features"><span class="feature">override</span></div>
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Describes the part of the user interface represented by this widget.</p>
+<p>The framework calls this method when this widget is inserted into the tree
+in a given <a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a> and when the dependencies of this widget change
+(e.g., an <a href="https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html">InheritedWidget</a> referenced by this widget changes). This
+method can potentially be called in every frame and should not have any side
+effects beyond building a widget.</p>
+<p>The framework replaces the subtree below this widget with the widget
+returned by this method, either by updating the existing subtree or by
+removing the subtree and inflating a new subtree, depending on whether the
+widget returned by this method can update the root of the existing
+subtree, as determined by calling <a href="https://api.flutter.dev/flutter/widgets/Widget/canUpdate.html">Widget.canUpdate</a>.</p>
+<p>Typically implementations return a newly created constellation of widgets
+that are configured with information from this widget's constructor and
+from the given <a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a>.</p>
+<p>The given <a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a> contains information about the location in the
+tree at which this widget is being built. For example, the context
+provides the set of inherited widgets for this location in the tree. A
+given widget might be built with multiple different <a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a>
+arguments over time if the widget is moved around the tree or if the
+widget is inserted into the tree in multiple places at once.</p>
+<p>The implementation of this method must only depend on:</p>
+<ul>
+<li>the fields of the widget, which themselves must not change over time,
+and</li>
+<li>any ambient state obtained from the <code>context</code> using
+<a href="https://api.flutter.dev/flutter/widgets/BuildContext/dependOnInheritedWidgetOfExactType.html">BuildContext.dependOnInheritedWidgetOfExactType</a>.</li>
+</ul>
+<p>If a widget's <a href="../../information_page/InformationPage/build.html">build</a> method is to depend on anything else, use a
+<a href="https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html">StatefulWidget</a> instead.</p>
+<p>See also:</p>
+<ul>
+<li><a href="https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html">StatelessWidget</a>, which contains the discussion on performance considerations.</li>
+</ul>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    backgroundColor: Colors.white, &#47;&#47; Set the background color of the scaffold
+    appBar: AppBar(
+      title: const Text(&#39;Information&#39;), &#47;&#47; Set the title of the app bar
+      backgroundColor: const Color.fromARGB(
+          255, 185, 220, 248), &#47;&#47; Set the background color of the app bar
+    ),
+    body: SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          &#47;&#47; Image at the top
+          Image.asset(
+            &#39;images&#47;index.png&#39;, &#47;&#47; Path to the image asset
+            height: 200, &#47;&#47; Adjust the height as needed
+            width: double.infinity, &#47;&#47; Adjust the fit as needed
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const Text(
+                  &#39;BMI Chart&#39;, &#47;&#47; Title for the section
+                  style: TextStyle(
+                      fontSize: 24,
+                      fontWeight:
+                          FontWeight.bold), &#47;&#47; Set font size and weight
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Image.asset(
+                  &#39;images&#47;table.png&#39;, &#47;&#47; Path to the image asset
+                  height: 250, &#47;&#47; Adjust the height of the image
+                  fit: BoxFit.contain, &#47;&#47; Adjust the fit of the image
+                ),
+              ],
+            ),
+          ),
+          &#47;&#47; Rest of the content (BMI categories)
+          _buildCategory(
+            title: &#39;Severe undernourishment&#39;, &#47;&#47; Title of the category
+            description: &quot;&quot;&quot;
+              This category refers to individuals whose BMI falls below 16 kg&#47;m².
+              Severe undernourishment indicates a critical deficiency in body weight relative to height, suggesting significant malnutrition.
+              People in this category may exhibit severe symptoms of malnutrition, including extreme weight loss, muscle wasting, and potential organ dysfunction.
+              Immediate medical attention and nutritional intervention are typically required to address severe undernourishment and prevent further health complications.
+            &quot;&quot;&quot;,
+          ),
+          _buildCategory(
+            title: &#39;Medium undernourishment&#39;,
+            description: &quot;&quot;&quot;
+              Individuals falling within the BMI range of 16 to 16.9 kg&#47;m² are classified as having medium undernourishment.
+              While not as severe as &quot;severe undernourishment,&quot; medium undernourishment still indicates a notable deficiency in body weight relative to height.
+              People in this category may experience symptoms such as fatigue, weakness, and compromised immune function due to insufficient nutrition.
+              Intervention strategies may include dietary improvements, nutritional supplementation, and medical monitoring to address medium undernourishment and prevent its progression.
+            &quot;&quot;&quot;,
+          ),
+          _buildCategory(
+            title: &#39;Slight undernourishment&#39;,
+            description: &quot;&quot;&quot;
+              This category encompasses individuals with BMIs ranging from 17 to 18.4 kg&#47;m².
+              Slight undernourishment suggests a mild deficiency in body weight relative to height.
+              While not as critical as severe or medium undernourishment, individuals in this category may still be at risk of health issues associated with inadequate nutrition.
+              Dietary counseling, nutritional support, and lifestyle modifications may be recommended to address slight undernourishment and promote healthier weight management.
+            &quot;&quot;&quot;,
+          ),
+          _buildCategory(
+            title: &#39;Normal nutrition state&#39;,
+            description: &quot;&quot;&quot;
+              The BMI range of 18.5 to 24.9 kg&#47;m² is considered the normal nutrition state.
+              Individuals within this range typically have a balanced weight relative to their height, indicating adequate nutrition and a lower risk of weight-related health issues.
+              Maintaining a BMI within this range is associated with optimal health outcomes and reduced risk of chronic diseases.
+              However, it&#39;s essential to note that BMI is just one measure of health, and other factors such as muscle mass, body composition, and overall lifestyle also contribute to overall health and well-being.
+            &quot;&quot;&quot;,
+          ),
+          _buildCategory(
+            title: &#39;Overweight&#39;,
+            description: &quot;&quot;&quot;
+              Falling within the BMI range of 25 to 29.9 kg&#47;m² classifies individuals as overweight.
+              Overweight individuals have excess body weight relative to their height, which may increase their risk of developing various health conditions such as cardiovascular disease, type 2 diabetes, and certain cancers.
+              Weight management strategies, including dietary modifications, regular physical activity, and behavior changes, are typically recommended to reduce the risk of complications associated with being overweight.
+            &quot;&quot;&quot;,
+          ),
+          _buildCategory(
+            title: &#39;Obesity&#39;,
+            description: &quot;&quot;&quot;
+              BMI values ranging from 30 to 39.9 kg&#47;m² indicate obesity.
+              Obesity is a chronic medical condition characterized by excessive body fat accumulation, which can significantly impact health and increase the risk of numerous diseases and health conditions.
+              Individuals with obesity may experience a range of health issues, including hypertension, dyslipidemia, sleep apnea, and joint problems.
+              Management of obesity often requires comprehensive interventions, including lifestyle modifications, dietary changes, physical activity, behavioral therapy, and in some cases, medical or surgical interventions.
+            &quot;&quot;&quot;,
+          ),
+          _buildCategory(
+            title: &#39;Pathological obesity&#39;,
+            description: &quot;&quot;&quot;
+              This category includes individuals with a BMI exceeding 40 kg&#47;m².
+              Pathological obesity represents extreme obesity and is associated with a significantly higher risk of severe health complications and mortality.
+              People in this category may experience severe obesity-related health issues such as heart disease, stroke, respiratory problems, and reduced life expectancy.
+              Treatment for pathological obesity often involves intensive medical management, including specialized weight loss interventions, close medical monitoring, and, in some cases, bariatric surgery to reduce weight and mitigate associated health risks.
+            &quot;&quot;&quot;,
+          ),
+        ],
+      ),
+    ),
+  );
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">final_project</a></li>
+    <li><a href="../../information_page/information_page-library.html">information_page</a></li>
+    <li><a href="../../information_page/InformationPage-class.html">InformationPage</a></li>
+    <li class="self-crumb">build method</li>
+</ol>
+
+
+    <h5>InformationPage class</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    final_project
+      0.1.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
